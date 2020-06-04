@@ -39,10 +39,15 @@ body {
 
 h1 {
     color: goldenrod;
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
     margin: 30px;
 
+}
+
+.links {
+    display: flex;
+    justify-content: center;
 }
 
 .links a {
@@ -52,24 +57,37 @@ h1 {
     display: flex;
     justify-content: center;
     border: 1px solid goldenrod;
-    width: 100px;
+    width: 125px;
+    height: 30px;
+    transition: transform .2s;
+    font-size: 1.5em;
 
 
 }
 
-header nav a:hover {
+.links a:hover {
     color: white;
+    transform: scale(1.25)
+
 
 }
 
 h2 {
-    color: blue;
+    color: darkolivegreen;
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
+    margin: 20px;
+    transition: transform 1s;
+}
+
+h2:hover {
+    color: darkgoldenrod;
+    transform: scale(1.5)
 }
 
 .bio {
-
+    color: palegoldenrod;
+    font-size: 1.5em;
 }
 
 #wizard {
@@ -91,11 +109,31 @@ h2 {
     justify-content: flex-start;
 }
 
+footer nav {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+
 footer nav a {
     color: goldenrod;
     text-decoration: none;
-    background-color: grey;
+    background-color:darkred;
     display: flex;
     justify-content: center;
-    border: 2px solid blue;
+    border: 1px solid goldenrod;
+    width: 125px;
+    height: 30px;
+    transition: transform .2s;
+    font-size: 1.5em;
+
+
+}
+
+footer nav a:hover {
+    color: white;
+    transform: scale(1.25)
+
+
 }

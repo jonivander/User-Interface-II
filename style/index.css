@@ -67,8 +67,7 @@ h1 {
     height: 30px;
     transition: transform .2s;
     font-size: 1.5em;
-
-
+    margin: .5%;
 }
 
 .links a:hover {
@@ -116,12 +115,12 @@ h2:hover {
     justify-content: center;
 }
 
-.gallery div {
+.gallery img {
     padding: 20px;
     transition: transform .2s;
 }
 
-.gallery div:hover {
+.gallery img:hover {
     transform: scale(1.25)
 }
 
@@ -129,8 +128,9 @@ h2:hover {
     color: palegoldenrod;
     font-size: 1.5em;
     text-align: center;
-    width: 350px;
-    transform: none;
+    width: 300px; 
+    padding: 20px;
+    justify-content: center;
 }
 
 /*Footer Styling*/
@@ -176,5 +176,14 @@ footer nav a:hover {
 
 /*Phone Screen*/
 @media(max-width:500px) {
-
+    .links{
+        flex-direction: column;
+        align-items: center;
+    }
+    #wizard{
+        object-position: 50% 0;
+    }
+    #ProjectDescription {
+        width: 100%;
+    }
 }

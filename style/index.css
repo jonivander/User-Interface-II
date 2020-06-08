@@ -38,6 +38,11 @@ body {
     background-attachment: fixed;
 }
 
+/*header {
+    background-image: ;
+
+}*/
+
 h1 {
     color: goldenrod;
     font-size: 3.5em;
@@ -102,13 +107,13 @@ h2:hover {
     object-position: 0 15%;
 }
 
+/*Image Gallery Styling*/
+
 .gallery {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
-  
-
 }
 
 .gallery div {
@@ -127,6 +132,8 @@ h2:hover {
     width: 350px;
     transform: none;
 }
+
+/*Footer Styling*/
 
 footer nav {
     display: flex;
@@ -153,6 +160,21 @@ footer nav a {
 footer nav a:hover {
     color: white;
     transform: scale(1.25)
+}
 
+/*Media Queries*/
+
+/*Tablet Screen*/
+@media(max-width:800px) {
+    .gallery {
+        flex-wrap:wrap;
+    }
+    .gallery .item {
+        width: 45%;
+    }
+}
+
+/*Phone Screen*/
+@media(max-width:500px) {
 
 }
